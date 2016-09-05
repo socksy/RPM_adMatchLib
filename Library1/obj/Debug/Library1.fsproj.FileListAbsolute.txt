@@ -1,0 +1,7 @@
+C:\Projects\Library1\Library1\bin\Debug\Library1.XML
+C:\Projects\Library1\Library1\bin\Debug\Library1.dll
+C:\Projects\Library1\Library1\bin\Debug\Library1.pdb
+C:\Projects\Library1\Library1\bin\Debug\FSharp.Core.dll
+C:\Projects\Library1\Library1\bin\Debug\FSharp.Core.xml
+C:\Projects\Library1\Library1\obj\Debug\Library1.dll
+C:\Projects\Library1\Library1\obj\Debug\Library1.pdb
