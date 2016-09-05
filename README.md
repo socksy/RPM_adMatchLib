@@ -39,6 +39,7 @@ type Advertisement = {
 
 ### Matching function
 The function that matches a given channel with the available advertisement has the following signature. 
+This function is located at ```/Library1/matcher.fs```
 
 ```fsharp
   let matchAdv (request:Channel) (ads: Advertisement list) =
