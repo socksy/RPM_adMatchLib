@@ -1,6 +1,7 @@
 # RPM_adMatchLib
 Advertisement matching 
 
+### Channels
 Channels are represented by the following type 
 
 ```fsharp 
@@ -16,12 +17,13 @@ type Channel = {
                }
 ```
 
+#### Channel Constraints
 A constraint is represetented as a tuple of a string and a string list as shown below . And a channel can have multiple such constraints. 
 
 ```fsharp
 type Constraint = (string * string list)
 ```
-
+### Advertisement
 Advertisements are represetend by the following type 
 
 ```fsharp
@@ -35,16 +37,19 @@ type Advertisement = {
                      }
 ```
 
+### Matching function
 The function that matches a given channel with the available advertisement has the following signature. 
 
 ```fsharp
   let matchAdv (request:Channel) (ads: Advertisement list) =
 ```
 
-The function matchAdv returns a randomly selected advertisement should there be more number of matches. Otherwise if no matching advertisement is found, it returns "None". 
+The function generates F# functions from the constraints and runs this generated list of functions on advertisement list. Finally uses set intersection to find those advertiements that match all the constraints. The function matchAdv returns a randomly selected advertisement should there be more number of matches. Otherwise if no matching advertisement is found, it returns "None". 
 
 A few sample channel and sample advertisement can be represented as follows. These sample data are used in the program
 for executing couple of sample cases. 
+
+### Sample Data (used in the program)
 
 ```fsharp
     let Channels = [
@@ -102,6 +107,7 @@ for executing couple of sample cases.
               ]
 ```
 
+### Sample Calls (to ```MatchAdv``` function )
 As you see from the data, that advertisement "1" and "3" are matching as per the constraints described in the first channel, ```channels.[0]``` 
 
 So the output of 
