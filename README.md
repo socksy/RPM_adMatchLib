@@ -18,11 +18,23 @@ type Channel = {
 ```
 
 #### Channel Constraints
-A constraint is represetented as a tuple of a string and a string list as shown below . And a channel can have multiple such constraints. 
+A constraint is represetented as a tuple of a string and a string list as shown below . And a channel can have multiple such constraints. The first string represents on which attribute the constraint has to be applied and the list can be passed on to the predicate to validate the constraint. 
 
 ```fsharp
 type Constraint = (string * string list)
 ```
+
+For example the following constraints 
+
+```fsharp
+Constraints = [
+                 ("Language",["German"]);
+                 ("PreferenceOrder",["Fashion";"Beauty";"Automobile"])
+              ]
+```
+
+means that the channel can only take advertisements of "German" language and those advertisements can be either of the category "Fashion", "Beauty" or "Automobile".
+
 ### Advertisement
 Advertisements are represetend by the following type 
 
