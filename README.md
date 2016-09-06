@@ -33,7 +33,22 @@ Constraints = [
               ]
 ```
 
-means that the channel can only take advertisements of "German" language and those advertisements can be either of the category "Fashion", "Beauty" or "Automobile".
+means that the channel can only take advertisements of "German" language and those advertisements can be either of the category "Fashion", "Beauty" or "Automobile". These constraints are mapped to functions that takes an advertisement and a list of strings. 
+
+```fsharp
+//This is mapped for ("Language",["German"]);
+let checkForLanguage (ad:Advertisement)(values:string list)=
+    values.Contains ad.Language
+
+//This is mapped for ("PreferenceOrder",["Fashion";"Beauty";"Automobile"])
+let checkForPreferenceOrder(ad:Advertisement)(values:string list)=
+   //This is now a vanilla matching of string containing 
+   //This can be improved by some other sophisticated matching like
+   //Jaccard Index
+    ad.Type |> List.filter(fun t -> values.Contains t)|>List.length > 0
+```
+
+
 
 ### Advertisement
 Advertisements are represetend by the following type 
