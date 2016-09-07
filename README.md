@@ -21,15 +21,16 @@ type Channel = {
 A constraint is represetented as a tuple of a string and a string list as shown below . And a channel can have multiple such constraints. The first string represents on which attribute the constraint has to be applied and the list can be passed on to the predicate to validate the constraint. 
 
 ```fsharp
-type Constraint = (string * string list)
+type ConstraintType = LanguageConstraint | PreferenceConstraint | MaxViewConstraint
+type Constraint = (ConstraintType * string list)
 ```
 
 For example the following constraints 
 
 ```fsharp
 Constraints = [
-                 ("Language",["German"]);
-                 ("PreferenceOrder",["Fashion";"Beauty";"Automobile"])
+                 (LanguageConstraint,["German"]);
+                 (PreferenceConstraint,["Fashion";"Beauty";"Automobile"])
               ]
 ```
 
@@ -89,8 +90,8 @@ for executing couple of sample cases.
                         Country="Germany";
                         UserInterests = ["Fashion";"Automobile"];
                         Constraints = [
-                                            ("Language",["German"]);
-                                            ("PreferenceOrder",["Fashion";"Beauty";"Automobile"])
+                                            (LanguageConstraint,["German"]);
+                                            (PreferenceOrder,["Fashion";"Beauty";"Automobile"])
                                       ]
                      };
                      {
@@ -101,8 +102,8 @@ for executing couple of sample cases.
                         Country="UK";
                         UserInterests = ["Automobile";"Cars";"Transportation";"Fashion"];
                         Constraints = [
-                                            ("Language",["English"]);
-                                            ("PreferenceOrder",["Fashion";"Cars";"Automobile"])
+                                            (LanguageConstraint,["English"]);
+                                            (PreferenceConstraint,["Fashion";"Cars";"Automobile"])
                                       ]
                      }]
                 
@@ -154,3 +155,5 @@ printfn "%A" (matchAdv Channels.[1] ads)
 should be "None" as there is no advertisement as per the constraint defined for the second channel. 
 
 
+### Unit Tests
+There is an Unit Test project that uses NUnit 2.6.4 to check several functionalities 
