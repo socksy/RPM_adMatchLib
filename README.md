@@ -18,7 +18,7 @@ type Channel = {
 ```
 
 #### Channel Constraints
-A constraint is represetented as a tuple of a string and a string list as shown below . And a channel can have multiple such constraints. The first string represents on which attribute the constraint has to be applied and the list can be passed on to the predicate to validate the constraint. 
+A constraint is represented as a tuple of a constraint type and a string list as shown below . And a channel can have multiple such constraints. The constraint type represents on which attribute the constraint has to be applied and the list can be passed on to the predicate to validate the constraint. 
 
 ```fsharp
 type ConstraintType = LanguageConstraint | PreferenceConstraint | MaxViewConstraint
