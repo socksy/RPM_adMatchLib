@@ -7,10 +7,10 @@ open System.Linq
 
 type ChannelType = Blog 
                  | Site 
+type ConstraintType = LanguageConstraint | PreferenceConstraint | MaxViewConstraint
+type Constraint = (ConstraintType * string list)  
 
-type Constraint = (string * string list)  
-
-let maxViews = 5000
+let mutable maxViews = 5000
 
 type Channel = {
                     ID : string;
@@ -50,10 +50,10 @@ let checkForPreferenceOrder(ad:Advertisement)(values:string list)=
    //Jaccard Index
     ad.Type |> List.filter(fun t -> values.Contains t)|>List.length > 0
     
-let getConstraintChecker (tag:string)=
+let getConstraintChecker (tag:ConstraintType)=
     match tag with 
-     | "Language" -> checkForLanguage
-     | "PreferenceOrder" -> checkForPreferenceOrder
+     | ConstraintType.LanguageConstraint -> checkForLanguage
+     | ConstraintType.PreferenceConstraint -> checkForPreferenceOrder
      
     
 let getCommon (ids : (string list) list) =
@@ -89,7 +89,7 @@ let matchAdv (request:Channel) (ads: Advertisement list) =
 
     //Pick a random ad in case there are many.
     //if not, it will pick the only matching one.
-    let adID = if (ids|>Seq.length) >0 then (ids |> Seq.toList).[(new Random()).Next(ids.Count  - 1)] 
+    let adID = if (ids|>Seq.length) >0 then (ids |> Seq.toList).[(new Random()).Next(ids.Count)] 
                             else "None"
     if adID <> "None" then incrementView (ads.First(fun t -> t.ID = adID))
     adID

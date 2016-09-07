@@ -7,6 +7,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "adMatchLib", "Library1\adMa
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AdMatchConsoleTest", "AdMatchConsoleTest\AdMatchConsoleTest.fsproj", "{73CEDC2C-A60D-4EA6-99E2-A20787896BE7}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "adMatchLibUnitTest", "UnitTest\adMatchLibUnitTest.fsproj", "{4E36BD13-A131-4186-B025-E23650B57665}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{73CEDC2C-A60D-4EA6-99E2-A20787896BE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73CEDC2C-A60D-4EA6-99E2-A20787896BE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73CEDC2C-A60D-4EA6-99E2-A20787896BE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E36BD13-A131-4186-B025-E23650B57665}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E36BD13-A131-4186-B025-E23650B57665}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E36BD13-A131-4186-B025-E23650B57665}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E36BD13-A131-4186-B025-E23650B57665}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

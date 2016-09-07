@@ -15,8 +15,8 @@ let main argv =
                         Country="Germany";
                         UserInterests = ["Fashion";"Automobile"];
                         Constraints = [
-                                            ("Language",["German"]);
-                                            ("PreferenceOrder",["Fashion";"Beauty";"Automobile"])
+                                            (LanguageConstraint,["German"]);
+                                            (PreferenceConstraint,["Fashion";"Beauty";"Automobile"])
                                       ]
                      };
                      {
@@ -27,8 +27,8 @@ let main argv =
                         Country="UK";
                         UserInterests = ["Automobile";"Cars";"Transportation";"Fashion"];
                         Constraints = [
-                                            ("Language",["English"]);
-                                            ("PreferenceOrder",["Fashion";"Cars";"Automobile"])
+                                            (LanguageConstraint,["English"]);
+                                            (PreferenceConstraint,["Fashion";"Cars";"Automobile"])
                                       ]
                      }]
                 

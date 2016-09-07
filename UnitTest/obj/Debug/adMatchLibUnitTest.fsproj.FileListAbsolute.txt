@@ -1,0 +1,13 @@
+C:\Projects\RPM_adMatchLib\UnitTest\bin\Debug\UnitTest.XML
+C:\Projects\RPM_adMatchLib\UnitTest\bin\Debug\UnitTest.dll
+C:\Projects\RPM_adMatchLib\UnitTest\bin\Debug\UnitTest.pdb
+C:\Projects\RPM_adMatchLib\UnitTest\bin\Debug\FSharp.Core.dll
+C:\Projects\RPM_adMatchLib\UnitTest\bin\Debug\Library1.dll
+C:\Projects\RPM_adMatchLib\UnitTest\bin\Debug\nunit.framework.dll
+C:\Projects\RPM_adMatchLib\UnitTest\bin\Debug\Library1.pdb
+C:\Projects\RPM_adMatchLib\UnitTest\bin\Debug\Library1.xml
+C:\Projects\RPM_adMatchLib\UnitTest\bin\Debug\FSharp.Core.xml
+C:\Projects\RPM_adMatchLib\UnitTest\bin\Debug\nunit.framework.xml
+C:\Projects\RPM_adMatchLib\UnitTest\obj\Debug\adMatchLibUnitTest.fsprojResolveAssemblyReference.cache
+C:\Projects\RPM_adMatchLib\UnitTest\obj\Debug\UnitTest.dll
+C:\Projects\RPM_adMatchLib\UnitTest\obj\Debug\UnitTest.pdb

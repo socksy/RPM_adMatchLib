@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Projects\RPM_adMatchLib\UnitTest\bin\Debug\UnitTest.dll" total="4" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2016-09-07" time="09:56:15">
+  <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.5420" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.4\bin" machine-name="HOME-PC" user="Sudipta" user-domain="Home-PC" />
+  <culture-info current-culture="en-IN" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\Projects\RPM_adMatchLib\UnitTest\bin\Debug\UnitTest.dll" executed="True" result="Success" success="True" time="0.203" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="UnitTest" executed="True" result="Success" success="True" time="0.192" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="Advertisement Channel Constraint Checks" executed="True" result="Success" success="True" time="0.180" asserts="0">
+            <results>
+              <test-case name="UnitTest.Advertisement Channel Constraint Checks.Germany should get only German speaking advertisements" executed="True" result="Success" success="True" time="0.147" asserts="1" />
+              <test-case name="UnitTest.Advertisement Channel Constraint Checks.View count should be updated properly" executed="True" result="Success" success="True" time="0.016" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Advertisement Global Constraint Checks" executed="True" result="Success" success="True" time="0.008" asserts="0">
+            <results>
+              <test-case name="UnitTest.Advertisement Global Constraint Checks.Expired advertisements should be dropped" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTest.Advertisement Global Constraint Checks.Old advertisements should be spared" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
